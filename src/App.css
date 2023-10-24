@@ -1,0 +1,9 @@
+.app {
+    background-image : url('./mockData/img/image-from-rawpixel-id-2041762-jpeg.jpg');
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    min-height: 100vh;
+    padding-bottom: 1rem;
+
+}
