@@ -26,17 +26,15 @@ export const Menu = () => {
         >
             {coffeeShopMenu.map((e) => {
                 return (
-                    <GroupColumn title={e.category}>
+                    <GroupColumn icon={e.icon} title={e.category}>
                         {e.menu?.map((e) => {
                             let name = e.name;
                             let price = e.price;
-                            let icon = e.icon;
                             return (
                                 <GroupRow
                                     menu={{
                                         name: name,
                                         price: price,
-                                        icon: icon,
                                     }}
                                 />
                             );

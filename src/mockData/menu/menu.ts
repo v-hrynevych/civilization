@@ -3,114 +3,118 @@ import * as icons from "@mui/icons-material";
 export type IconNames = keyof typeof icons;
 
 interface Menu {
-    title?: string;
     category: string;
-    menu: Array<{ name: string; price: number; icon: IconNames }>;
+    icon: IconNames;
+    menu: Array<{ name: string; price: number }>;
 }
 
 export const coffeeShopMenu: Array<Menu> = [
     {
-        title: "Beverages",
         category: "Coffee Specialties",
+        icon: "LocalCafe",
         menu: [
-            { name: "Espresso", price: 2.5, icon: "Coffee" },
-            { name: "Cappuccino", price: 3.5, icon: "Coffee" },
-            { name: "Latte", price: 3.75, icon: "Coffee" },
-            { name: "Mocha", price: 4.0, icon: "Coffee" },
-            { name: "Americano", price: 3.0, icon: "Coffee" },
+            { name: "Espresso", price: 2.5 },
+            { name: "Cappuccino", price: 3.5 },
+            { name: "Latte", price: 3.75 },
+            { name: "Mocha", price: 4.0 },
+            { name: "Americano", price: 3.0 },
         ],
     },
     {
-        title: "",
         category: "Iced Coffee",
+        icon: "Coffee",
         menu: [
-            { name: "Iced Coffee", price: 3.25, icon: "Coffee" },
-            { name: "Iced Latte", price: 3.75, icon: "Coffee" },
-            { name: "Iced Mocha", price: 4.25, icon: "Coffee" },
+            { name: "Iced Coffee", price: 3.25 },
+            { name: "Iced Latte", price: 3.75 },
+            { name: "Iced Mocha", price: 4.25 },
         ],
     },
     {
-        title: "",
         category: "Teas",
+        icon: "EmojiFoodBeverage",
         menu: [
-            { name: "Hot Tea", price: 2.75, icon: "EmojiFoodBeverage" },
-            { name: "Iced Tea", price: 3.0, icon: "EmojiFoodBeverage" },
+            { name: "Hot Tea", price: 2.75 },
+            { name: "Iced Tea", price: 3.0 },
         ],
     },
     {
         category: "Cold Brew",
+        icon: "AcUnit",
         menu: [
-            { name: "Classic Cold Brew", price: 3.5, icon: "AcUnit" },
-            { name: "Vanilla Cold Brew", price: 4.0, icon: "AcUnit" },
+            { name: "Classic Cold Brew", price: 3.5 },
+            { name: "Vanilla Cold Brew", price: 4.0 },
         ],
     },
     {
         category: "Specialty Drinks",
+        icon: "LocalDrink",
         menu: [
-            { name: "Chai Latte", price: 4.25, icon: "LocalDrink" },
-            { name: "Matcha Latte", price: 4.5, icon: "LocalDrink" },
-            { name: "Turmeric Latte", price: 4.25, icon: "LocalDrink" },
-            { name: "Golden Milk", price: 4.0, icon: "LocalDrink" },
+            { name: "Chai Latte", price: 4.25 },
+            { name: "Matcha Latte", price: 4.5 },
+            { name: "Turmeric Latte", price: 4.25 },
+            { name: "Golden Milk", price: 4.0 },
         ],
     },
     {
         category: "Smoothies",
+        icon: "Icecream",
         menu: [
-            { name: "Berry Blast Smoothie", price: 4.5, icon: "Icecream" },
-            { name: "Green Goddess Smoothie", price: 4.5, icon: "Icecream" },
-            { name: "Mango Tango Smoothie", price: 4.75, icon: "Icecream" },
+            { name: "Berry Blast Smoothie", price: 4.5 },
+            { name: "Green Goddess Smoothie", price: 4.5 },
+            { name: "Mango Tango Smoothie", price: 4.75 },
         ],
     },
     {
-        title: "",
         category: "Sandwiches and Wraps",
+        icon: "BreakfastDining",
         menu: [
-            { name: "Croissants", price: 2.5, icon: "BreakfastDining" },
-            { name: "Muffins", price: 2.75, icon: "BreakfastDining" },
-            { name: "Danishes", price: 3.0, icon: "BreakfastDining" },
-            { name: "Scones", price: 3.25, icon: "BreakfastDining" },
+            { name: "Croissants", price: 2.5 },
+            { name: "Muffins", price: 2.75 },
+            { name: "Danishes", price: 3.0 },
+            { name: "Scones", price: 3.25 },
         ],
     },
     {
-        title: "",
         category: "Sandwiches and Wraps",
+        icon: "BreakfastDining",
         menu: [
             {
                 name: "Turkey and Swiss Sandwich",
                 price: 5.5,
-                icon: "BreakfastDining",
             },
-            { name: "Caprese Panini", price: 6.0, icon: "BreakfastDining" },
-            { name: "Chicken Caesar Wrap", price: 6.25, icon: "BreakfastDining" },
+            { name: "Caprese Panini", price: 6.0 },
+            {
+                name: "Chicken Caesar Wrap",
+                price: 6.25,
+            },
         ],
     },
     {
-        title: "",
         category: "Snacks",
+        icon: "LunchDining",
         menu: [
-            { name: "Fruit Cup", price: 3.5, icon: "LunchDining" },
-            { name: "Yogurt Parfait", price: 4.0, icon: "LunchDining" },
-            { name: "Chips and Salsa", price: 3.25, icon: "LunchDining" },
+            { name: "Fruit Cup", price: 3.5 },
+            { name: "Yogurt Parfait", price: 4.0 },
+            { name: "Chips and Salsa", price: 3.25 },
         ],
     },
     {
-        title: "",
         category: "Desserts",
+        icon: "Cookie",
         menu: [
-            { name: "Brownies", price: 2.75, icon: "Cookie" },
-            { name: "Cookies", price: 2.5, icon: "Cookie" },
-            { name: "Cheesecake", price: 4.5, icon: "Cookie" },
+            { name: "Brownies", price: 2.75 },
+            { name: "Cookies", price: 2.5 },
+            { name: "Cheesecake", price: 4.5 },
         ],
     },
     {
-        title: "Kids Menu",
         category: "Kids Menu",
+        icon: "EscalatorWarning",
         menu: [
-            { name: "Hot Chocolate", price: 3.0, icon: "EscalatorWarning" },
+            { name: "Hot Chocolate", price: 3.0 },
             {
                 name: "Peanut Butter & Jelly Sandwich",
                 price: 3.5,
-                icon: "EscalatorWarning",
             },
         ],
     },
